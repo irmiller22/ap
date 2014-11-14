@@ -1,11 +1,19 @@
 require 'sinatra/base'
 require 'sinatra/assetpack'
 require 'sinatra/activerecord'
+require 'sinatra/cache'
 
 set :database, "sqlite3:db/ap.db"
 
 class App < Sinatra::Base
   register Sinatra::AssetPack
+  register Sinatra::Cache
+
+  set :root, File.dirname(__FILE__)
+  set :cache_enabled, true
+  set :cache_environment, :development
+  set :cache_output_dir, Proc.new { File.join(root, 'public', 'cache') }
+
   assets do
     serve '/images', from: 'app/images'
     serve '/plugins', from: 'app/plugins'
@@ -24,7 +32,7 @@ class App < Sinatra::Base
 
   get "/" do
     @ian = Owner.find_by(name: "Ian Miller")
-    erb :layout
+    erb :layout, cache: true
   end
 end
 
