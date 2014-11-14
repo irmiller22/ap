@@ -110,8 +110,12 @@
 .page-welcome .centralized {
   z-index: 2;
 }
-/**   PAGE | WORK*/.portfolio-items {
-  /*    * Filtering configuration    */
+/*
+*   PAGE | WORK
+*/.portfolio-items {
+  /*
+    * Filtering configuration
+    */
 }
 .portfolio-items a {
   position: relative;
@@ -235,7 +239,9 @@
 .portfolio-item-details .submenu span:hover {
   text-decoration: none;
 }
-/**   PAGE | FEATURES*/.page-features {
+/*
+*   PAGE | FEATURES
+*/.page-interests {
   position: relative;
   background: url(../images/pages/features/q_bck.jpg) 50% 0 no-repeat fixed;
   -webkit-background-size: cover;
@@ -243,22 +249,22 @@
   -o-background-size: cover;
   background-size: cover;
 }
-.page-features .container {
+.page-interests .container {
   position: relative;
   z-index: 2;
 }
-.page-features #quote-slider {
+.page-interests #quote-slider {
   margin-bottom: 35px;
   position: relative;
 }
-.page-features #quote-slider .carousel-indicators {
+.page-interests #quote-slider .carousel-indicators {
   left: 0;
   right: 0;
   top: auto;
   bottom: -8px;
   text-align: center;
 }
-.page-features #quote-slider .carousel-indicators li {
+.page-interests #quote-slider .carousel-indicators li {
   width: 8px;
   height: 8px;
   -webkit-border-radius: 8px;
@@ -268,7 +274,7 @@
   float: none;
   display: inline-block;
 }
-.page-features .quote {
+.page-interests .quote {
   background: url(../images/css/divider_q.png) no-repeat 50% 0;
   margin-top: 100px;
   padding-top: 50px;
@@ -618,7 +624,9 @@
 .page-contact form .media {
   padding-top: 24px;
 }
-/**   PAGE | CLIENTS*/.page-clients .row-fluid {
+/*
+*   PAGE | CLIENTS
+*/.page-clients .row-fluid {
   padding-bottom: 40px;
   padding-top: 15px;
 }
@@ -722,7 +730,9 @@
 #navigation .mobile-menu:hover .icon-bar {
   background-color: #4e808e;
 }
-/**   FOOTER*/.pages footer {
+/*
+*   FOOTER
+*/.pages footer {
   padding-top: 30px;
   padding-bottom: 60px;
   text-align: center;
@@ -7468,10 +7478,10 @@ a.badge:focus {
     -o-transition: none;
     transition: none;
   }
-  #page-features {
+  #page-interests {
     background-repeat: repeat;
   }
-  #page-features article .span4 img {
+  #page-interests article .span4 img {
     margin-top: 20px;
   }
   #navigation #main-menu {

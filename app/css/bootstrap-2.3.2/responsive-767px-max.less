@@ -13,17 +13,17 @@
     h2,
     h3 { line-height: @baseLineHeight * 1; }
 
-    h1 { 
+    h1 {
         font-size: @baseFontSize * 2.2;
         line-height: @baseLineHeight * 2;
-    } 
+    }
     h2 { font-size: @baseFontSize * 1.25; } // ~32px
     h3 { font-size: @baseFontSize * 1; } // ~24px
     h4 {
         font-size: @baseFontSize;
     }
 
-    h5 { 
+    h5 {
         font-size: @baseFontSize;
     }
 
@@ -31,7 +31,7 @@
         font-size: @baseFontSize * 0.8;
         padding: (@baseLineHeight / 2) 0;
     }
-    
+
     // Negative indent the now static "fixed" navbar
     .navbar-fixed-top,
     .navbar-fixed-bottom,
@@ -39,7 +39,7 @@
         margin-left: -20px;
         margin-right: -20px;
     }
-    
+
     // Remove padding on container given explicit padding set on body
     .container-fluid {
         padding: 0;
@@ -66,12 +66,12 @@
     .container {
         width: auto;
     }
-    
+
     // Fluid rows
     .row-fluid {
         width: 100%;
     }
-    
+
     // Undo negative margin on rows and thumbnails
     .row,
     .thumbnails {
@@ -82,7 +82,7 @@
         text-align: center;
         margin-left: 0; // Reset the default margin for all li elements when no .span* classes are present
     }
-    
+
     // Make all grid-sized elements block level again
     [class*="span"],
     .uneditable-input[class*="span"], // Makes uneditable inputs full-width when using grid sizing
@@ -114,7 +114,7 @@
     .uneditable-input {
         .input-block-level();
     }
-    
+
     // But don't let it screw up prepend/append inputs
     .input-prepend input,
     .input-append input,
@@ -138,7 +138,7 @@
         &.fade  { top: -100px; }
         &.fade.in { top: 20px; }
     }
-  
+
 
     #navigation {
         #main-menu {
@@ -165,7 +165,7 @@
     #page-about .about-items .item {
         display: block;
     }
-    
+
     #page-twitter {
         .twitterfeed {
             min-height: 75px;
@@ -178,22 +178,22 @@
     .paralax {
         background-attachment: scroll !important;
     }
-      
+
     .cutBy10 {
         margin:auto;
     }
-    
-    
+
+
     .about-items > li,
     .portfolio-items > li{
         width: 47%;
         margin: 1%;
         float: left;
-        
+
         a {
             display: inline-block;
         }
-        
+
         img {
             width: 100%;
         }
@@ -201,39 +201,39 @@
 
     #page-about .about-items .item {
         display: inline-block;
-   
+
         .about-overlay {
          .transition(none);
         }
     }
-    #page-features {
+    #page-interests {
          background-repeat: repeat;
-         
+
         article {
             .span4 img{
                 margin-top: 20px;
             }
         }
     }
-    
+
     #navigation #main-menu {
         display: block;
         width: 100%;
-        
+
         li {
             display: block;
-            
+
             a:after {
                 display: none;
             }
-            
+
             &:hover a,
             &.active a {
                 background-color: @veryLight;
             }
         }
     }
-    
+
     /* Elements */
     #welcome-messages {
         width: 100%;
@@ -243,12 +243,12 @@
     .line-divider:after {
         width: 80%;
     }
-    
+
     .container {
         padding-left: 15px;
         padding-right: 15px;
     }
-    
+
     .smallFontBy08 {
         font-size: 1em;
     }
@@ -282,17 +282,17 @@
             padding-top: 0;
             text-align: left;
         }
-        
+
         // Move over all input controls and content
         .controls {
             margin-left: 0;
         }
-        
+
         // Move the options list down to align with labels
         .control-list {
             padding-top: 0; // has to be padding because margin collaspes
         }
-        
+
         // Move over buttons in .form-actions to align with .controls
         .form-actions {
             padding-left: 10px;
@@ -329,8 +329,8 @@
     .carousel-caption {
         position: static;
     }
-  
-  
+
+
     /*
     *   Prepare template for tablet resolution
     */
@@ -338,23 +338,23 @@
         float: left; // Explicity set the float since we don't require .span* classes
         margin-bottom: @baseLineHeight;
     }
-    
+
     .about-items > li,
     .portfolio-items > li{
         width: 100%;
         margin: 0;
         margin-bottom: 20px;
         float: none;
-        
+
         a {
             display: inline-block;
         }
-        
+
         img {
             width: 100%;
         }
     }
-    
+
     .centralized {
         left: auto;
         float: none;
