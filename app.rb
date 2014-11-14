@@ -17,6 +17,7 @@ class App < Sinatra::Base
   assets do
     serve '/images', from: 'app/images'
     serve '/plugins', from: 'app/plugins'
+    serve '/fonts', from: 'app/fonts'
 
     js :application, [
       '/js/jquery-1.10.2.min.js',
