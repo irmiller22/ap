@@ -19,3 +19,5 @@
 .DS_Store
 
 /public/*
+
+/config/database.yml
