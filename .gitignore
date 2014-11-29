@@ -16,8 +16,11 @@
 /log/*.log
 /tmp
 
+# Ignore DS Store
 .DS_Store
 
+# Ignore generated assets
 /public/*
 
+# Ignore database.yml
 /config/database.yml
