@@ -91,10 +91,10 @@
                     <h1><%= @ian.name %></h1>
                   </li>
                   <li>
-                    <h1>North Carolina</h1>
+                    <h1>Tar Heel</h1>
                   </li>
                   <li>
-                    <h1>Based in NYC</h1>
+                    <h1>NYC Resident</h1>
                   </li>
                 </ul>
               </div>
@@ -241,139 +241,107 @@
     <!-- PAGE | BLOG -->
     <div class="pages page-blog" id="page-blog">
         <div class="container">
-            <!-- Header -->
-            <header>
-                <h4 class="line-divider">Blog</h4>
-                <h1>Recent Blog Posts</h1>
-                <div class="row">
-                    <div class="span8 offset2">
-                        <div class="input-append">
-                          <input class="span5" id="appendedInputButton" type="text" placeholder="Search Blog">
-                          <button class="btn btn-primary sicon-search sicon-white" type="button"><i>Search</i></button>
-                        </div>
-                    </div>
+          <!-- Header -->
+          <header>
+            <h4 class="line-divider">Blog</h4>
+            <h1>Recent Blog Posts</h1>
+          </header>
+          <!-- End Header -->
+
+          <!-- Article -->
+          <article>
+            <!-- Blog articles -->
+            <ul class="thumbnails">
+              <!-- Blog post -->
+              <li class="span4">
+
+                <!-- Blog image -->
+                <a href="http://www.ianmiller.nyc/blog/2014/11/04/the-voice-in-the-background" target="_blank">
+                  <img src="http://placehold.it/390x300" alt="Treble">
+                </a>
+
+                <!-- Blog title -->
+                <h5>
+                  You're Not an Impostor<br/>
+                  <small>November 24, 2014</small>
+                </h5>
+
+                <!-- Blog post description -->
+                <p class="smallFontBy08">How to Manage Expectations as a new developer.</p>
+
+                <!-- Blog read more -->
+                <div class="read-more">
+                  <a href="http://www.ianmiller.nyc/blog/2014/11/04/the-voice-in-the-background">Read More...</a>
                 </div>
-
-                <!-- Sub menu -->
-                <nav class="submenu">
-                    <ul>
-                        <li>
-                            <a href="./pages/blog/blog.html">All</a>
-                        </li>
-                        <li>
-                            <a href="./pages/blog/blog.html">Technology</a>
-                        </li>
-                        <li>
-                            <a href="./pages/blog/blog.html">Design</a>
-                        </li>
-                        <li>
-                            <a href="./pages/blog/blog.html">Future trends</a>
-                        </li>
-                        <li>
-                            <a href="./pages/blog/blog.html">Photography</a>
-                        </li>
-                        <li>
-                            <a href="./pages/blog/blog.html">Other</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <!-- End Header -->
-
-            <!-- Article -->
-            <article>
-                <!-- Blog articles -->
-                <ul class="thumbnails">
-                    <!-- Blog post -->
-                    <li class="span4">
-
-                        <!-- Blog image -->
-                        <a href="http://www.ianmiller.nyc/blog/2014/11/04/the-voice-in-the-background" target="_blank">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-
-                        <!-- Blog title -->
-                        <h5>
-                            You're Not an Impostor<br/>
-                            <small>November 24, 2014</small>
-                        </h5>
-
-                        <!-- Blog post description -->
-                        <p class="smallFontBy08">How to Manage Expectations as a new developer.</p>
-
-                        <!-- Blog read more -->
-                        <div class="read-more">
-                            <a href="http://www.ianmiller.nyc/blog/2014/11/04/the-voice-in-the-background">Read More...</a>
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <a href="http://www.ianmiller.nyc/blog/2014/09/29/working-with-rack-sessions">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                            Working with Rack Sessions<br/>
-                            <small>June 13, 2014</small>
-                        </h5>
-                        <p class="smallFontBy08">I ran into an issue with Rack Sessions, and was unable to figure out how to write tests for it. How I ultimately resolved the problem.</p>
-                        <div class="read-more">
-                            <a href="http://www.ianmiller.nyc/blog/2014/09/29/working-with-rack-sessions">Read More...</a>
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <a href="http://www.ianmiller.nyc/blog/2014/05/04/intersection-between-tolstoy-and-agile-programming">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                            Intersection between Tolstoy and Agile Programming<br/>
-                            <small>May 22, 2014</small>
-                        </h5>
-                        <p class="smallFontBy08">Thoughts gleaned from a TEDTalks episode with Bruce Feiler, and how it relates to Agile Programming.</p>
-                        <div class="read-more">
-                            <a href="http://www.ianmiller.nyc/blog/2014/05/04/intersection-between-tolstoy-and-agile-programming">Read More...</a>
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <a href="http://www.ianmiller.nyc/blog/2014/04/18/rspec-testing-for-a-json-api">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                            RSpec Testing for a JSON API<br/>
-                            <small>April 10, 2013</small>
-                        </h5>
-                        <p class="smallFontBy08">A simple implementation of a namespaced JSON API, and how to write effective tests for it.</p>
-                        <div class="read-more">
-                            <a href="http://www.ianmiller.nyc/blog/2014/04/18/rspec-testing-for-a-json-api">Read More...</a>
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <a href="http://www.ianmiller.nyc/blog/2014/04/01/strong-params-in-rails">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                          Strong Params in Rails<br/>
-                          <small>March 10, 2014</small>
-                        </h5>
-                        <p class="smallFontBy08">A primer on what the concept of strong params is in Rails, and what it does.</p>
-                        <div class="read-more">
-                          <a href="http://www.ianmiller.nyc/blog/2014/04/01/strong-params-in-rails">Read More...</a>
-                        </div>
-                    </li>
-                    <li class="span4">
-                        <a href="http://www.ianmiller.nyc/blog/2014/03/19/rails-caching">
-                            <img src="http://placehold.it/390x300" alt="Treble">
-                        </a>
-                        <h5>
-                            Rails Caching<br/>
-                            <small>February 18, 2014</small>
-                        </h5>
-                        <p class="smallFontBy08">Rails Caching is the process of preventing extensive database querying by storing page elements in a memory store.</p>
-                        <div class="read-more">
-                            <a href="http://www.ianmiller.nyc/blog/2014/03/19/rails-caching">Read More...</a>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-            <!-- End Article -->
+              </li>
+              <li class="span4">
+                <a href="http://www.ianmiller.nyc/blog/2014/09/29/working-with-rack-sessions">
+                  <img src="http://placehold.it/390x300" alt="Treble">
+                </a>
+                <h5>
+                  Working with Rack Sessions<br/>
+                  <small>June 13, 2014</small>
+                </h5>
+                <p class="smallFontBy08">I ran into an issue with Rack Sessions, and was unable to figure out how to write tests for it. How I ultimately resolved the problem.</p>
+                <div class="read-more">
+                  <a href="http://www.ianmiller.nyc/blog/2014/09/29/working-with-rack-sessions">Read More...</a>
+                </div>
+              </li>
+              <li class="span4">
+                <a href="http://www.ianmiller.nyc/blog/2014/05/04/intersection-between-tolstoy-and-agile-programming">
+                  <img src="http://placehold.it/390x300" alt="Treble">
+                </a>
+                <h5>
+                  Intersection between Tolstoy and Agile Programming<br/>
+                  <small>May 22, 2014</small>
+                </h5>
+                <p class="smallFontBy08">Thoughts gleaned from a TEDTalks episode with Bruce Feiler, and how it relates to Agile Programming.</p>
+                <div class="read-more">
+                  <a href="http://www.ianmiller.nyc/blog/2014/05/04/intersection-between-tolstoy-and-agile-programming">Read More...</a>
+                </div>
+              </li>
+              <li class="span4">
+                <a href="http://www.ianmiller.nyc/blog/2014/04/18/rspec-testing-for-a-json-api">
+                  <img src="http://placehold.it/390x300" alt="Treble">
+                </a>
+                <h5>
+                    RSpec Testing for a JSON API<br/>
+                    <small>April 10, 2013</small>
+                </h5>
+                <p class="smallFontBy08">A simple implementation of a namespaced JSON API, and how to write effective tests for it.</p>
+                <div class="read-more">
+                  <a href="http://www.ianmiller.nyc/blog/2014/04/18/rspec-testing-for-a-json-api">Read More...</a>
+                </div>
+              </li>
+              <li class="span4">
+                <a href="http://www.ianmiller.nyc/blog/2014/04/01/strong-params-in-rails">
+                    <img src="http://placehold.it/390x300" alt="Treble">
+                </a>
+                <h5>
+                Strong Params in Rails<br/>
+                <small>March 10, 2014</small>
+                </h5>
+                <p class="smallFontBy08">A primer on what the concept of strong params is in Rails, and what it does.</p>
+                <div class="read-more">
+                  <a href="http://www.ianmiller.nyc/blog/2014/04/01/strong-params-in-rails">Read More...</a>
+                </div>
+              </li>
+              <li class="span4">
+                <a href="http://www.ianmiller.nyc/blog/2014/03/19/rails-caching">
+                    <img src="http://placehold.it/390x300" alt="Treble">
+                </a>
+                <h5>
+                  Rails Caching<br/>
+                  <small>February 18, 2014</small>
+                </h5>
+                <p class="smallFontBy08">Rails Caching is the process of preventing extensive database querying by storing page elements in a memory store.</p>
+                <div class="read-more">
+                  <a href="http://www.ianmiller.nyc/blog/2014/03/19/rails-caching">Read More...</a>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <!-- End Article -->
         </div>
     </div>
     <!-- END PAGE | BLOG -->
@@ -398,20 +366,9 @@
         <!-- Start Article -->
         <article>
           <div class="row-fluid">
-            <!-- Contact form -->
-            <div class="span6">
-              <h5>Drop Us A Line</h5>
-              <form>
-                <input type="text" class="span12" placeholder="Title" required="required">
-                <input type="email" class="span12" placeholder="Email" required="required">
-                <textarea rows="10" class="span12" required="required"></textarea>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-            <!-- End Contact form -->
-            <!-- Contact information -->
-            <div class="span5 offset1">
-              <h5>Meet Us</h5>
+
+            <div class="span4 offset2">
+              <h5>Contact Me</h5>
               <div class="media">
                 <div class="social-icons sicon-white pull-left">
                     <a href="#" class="sicon-phone"><i>Phone</i></a>
@@ -436,9 +393,9 @@
                     UTC / GMT -5
                 </div>
               </div>
-              <br/>
-              <br/>
-              <br/>
+            </div>
+
+            <div class="span4 offset2">
               <h5>Get Social</h5>
               <div class="social-icons sicon-white bordered">
                 <a href="http://www.facebook.com/<%= @ian.facebook %>" class="sicon-facebook"><i>Facebook</i></a>
@@ -467,13 +424,13 @@
 
     <!-- GOOGLE ANALYTICS -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-44061294-1', 'gridelicious.net');
-        ga('send', 'pageview');
+      ga('create', 'UA-44061294-1', 'gridelicious.net');
+      ga('send', 'pageview');
     </script>
 </body>
 </html>
