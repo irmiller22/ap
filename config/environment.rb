@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'sinatra/assetpack'
 require 'sinatra/activerecord'
 require 'sinatra/cache'
+require 'sass'
 
 require './models/owner.rb'
 require 'sinatra/activerecord/rake'
