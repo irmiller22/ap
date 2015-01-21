@@ -2,8 +2,26 @@ require 'sinatra/base'
 require 'sinatra/assetpack'
 require 'sinatra/activerecord'
 require 'sinatra/cache'
+require 'sass'
 
-set :database, "sqlite3:db/ap.db"
+configure :development do
+  set :database, "sqlite3:db/ap.db"
+  set :show_exceptions, true
+end
+
+configure :production do
+  ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+  # db = URI.parse('postgres://localhost/ap')
+
+  # ActiveRecord::Base.establish_connection(
+  #   adapter: db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+  #   host: db.host,
+  #   username: db.user,
+  #   password: db.password,
+  #   database: db.path[1..-1],
+  #   encoding: 'utf8'
+  # )
+end
 
 class App < Sinatra::Base
   register Sinatra::AssetPack
@@ -18,6 +36,8 @@ class App < Sinatra::Base
     serve '/images', from: 'app/images'
     serve '/plugins', from: 'app/plugins'
     serve '/fonts', from: 'app/fonts'
+    serve '/css', from: 'app/css'
+    serve '/js', from: 'app/js'
 
     js :application, [
       '/js/jquery-1.10.2.min.js',
