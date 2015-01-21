@@ -1,5 +1,6 @@
 APP_FILE = 'app.rb'
 APP_CLASS = 'Sinatra::Application'
 
-require './config/environment'
+require 'sinatra/activerecord/rake'
+require 'sinatra/assetpack/rake'
 

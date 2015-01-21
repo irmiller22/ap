@@ -8,6 +8,7 @@ gem 'sinatra-assetpack'
 gem 'sinatra-cache'
 gem 'pry'
 gem 'sass'
+gem 'rake'
 
 group :development do
   gem 'sqlite3'

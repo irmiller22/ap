@@ -1,12 +1,9 @@
-require 'sinatra/base'
-require 'sinatra/assetpack'
-require 'sinatra/activerecord'
-require 'sinatra/cache'
-require 'sass'
+require 'rubygems'
+require 'bundler/setup'
+
+Bundler.require(:default)
 
 require './models/owner.rb'
-require 'sinatra/activerecord/rake'
-require 'sinatra/assetpack/rake'
 require './app'
 
 
