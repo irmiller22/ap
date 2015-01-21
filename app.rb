@@ -36,6 +36,8 @@ class App < Sinatra::Base
     serve '/images', from: 'app/images'
     serve '/plugins', from: 'app/plugins'
     serve '/fonts', from: 'app/fonts'
+    serve '/css', from: 'app/css'
+    serve '/js', from: 'app/js'
 
     js :application, [
       '/js/jquery-1.10.2.min.js',
@@ -47,9 +49,6 @@ class App < Sinatra::Base
     css :application, [
       '/css/bootstrap.css'
     ]
-
-    js_compression :jsmin
-    css_compression :sass
   end
 
   get "/" do
