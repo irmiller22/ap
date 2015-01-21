@@ -1,7 +1,4 @@
-require 'sinatra/base'
-require 'sinatra/assetpack'
-require 'sinatra/activerecord'
-require 'sinatra/cache'
+require './config/environment'
 
 configure :development do
   set :database, "sqlite3:db/ap.db"

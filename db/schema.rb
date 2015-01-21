@@ -13,20 +13,20 @@
 
 ActiveRecord::Schema.define(version: 20141112162133) do
 
-  create_table "owners", force: true do |t|
-    t.string  "name"
-    t.string  "street"
-    t.string  "city"
+  create_table "owners", force: :cascade do |t|
+    t.string  "name",          limit: 255
+    t.string  "street",        limit: 255
+    t.string  "city",          limit: 255
     t.integer "zip_code"
-    t.string  "mobile_number"
-    t.string  "email_address"
-    t.string  "position"
-    t.string  "employer"
-    t.string  "blog_url"
-    t.string  "twitter"
-    t.string  "instagram"
-    t.string  "facebook"
-    t.string  "linkedin"
+    t.string  "mobile_number", limit: 255
+    t.string  "email_address", limit: 255
+    t.string  "position",      limit: 255
+    t.string  "employer",      limit: 255
+    t.string  "blog_url",      limit: 255
+    t.string  "twitter",       limit: 255
+    t.string  "instagram",     limit: 255
+    t.string  "facebook",      limit: 255
+    t.string  "linkedin",      limit: 255
   end
 
 end
