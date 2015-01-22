@@ -33,11 +33,11 @@ class App < Sinatra::Base
   set :cache_output_dir, Proc.new { File.join(root, 'public', 'cache') }
 
   assets do
+    serve '/css', from: 'app/css'
+    serve '/js', from: 'app/js'
     serve '/images', from: 'app/images'
     serve '/plugins', from: 'app/plugins'
     serve '/fonts', from: 'app/fonts'
-    serve '/css', from: 'app/css'
-    serve '/js', from: 'app/js'
 
     js :application, [
       '/js/jquery-1.10.2.min.js',
