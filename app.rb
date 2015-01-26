@@ -49,6 +49,10 @@ class App < Sinatra::Base
     css :application, [
       '/css/bootstrap.css'
     ]
+
+    js_compression :jsmin
+    css_compression :sass
+    prebuild true
   end
 
   get "/" do
